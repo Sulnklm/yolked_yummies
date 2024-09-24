@@ -29,7 +29,7 @@ const Dropdown = ({ title, menuItems }) => {
             {isOpen && (
                 <div className={`${dropdownStyles}`}>
                     {menuItems.map((menuItems, index) => (
-                        <Link key={index} to={menuItems.link} className=" hover:text-blue-400 flex pt-3 pb-3" onClick={() => {
+                        <Link key={index} to={menuItems.link} className=" hover:text-blue-400 flex py-5 px-4" onClick={() => {
                             setMobileOpen(false); // 사이드바 닫기
                             setIsOpen(false); // 드롭다운 닫기
                         }}>

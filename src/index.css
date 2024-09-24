@@ -5,41 +5,32 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-/* Mobile font size */
-html {
-  font-size: 16px;
-}
-
-body {
-  @apply font-lato;
-}
-
-/* sm screen */
-@media (min-width: 640px) {
-  html {
-    font-size: 18px;
+@layer components {
+  .h1-custom {
+    @apply font-sans font-bold text-h1-xs tracking-wide sm:text-h1-sm md:text-h1-md  lg:text-h1-lg ;
   }
-}
 
-/* md screen */
-@media (min-width: 768px) {
-  html {
-    font-size: 20px;
+  .h2-custom {
+    @apply font-lato text-h2-xs tracking-wide sm:text-h2-sm md:text-h2-md lg:text-h2-lg ;
   }
-}
 
-/* lg screen */
-@media (min-width: 1024px) {
-  html {
-    font-size: 22px;
+  .h3-custom {
+    @apply font-sans font-bold tracking-wide text-h3-xs sm:text-h3-sm md:text-h3-md lg:text-h3-lg ;
   }
-}
 
-/* xl screen */
-@media (min-width: 1280px) {
-  html {
-    font-size: 24px;
+  .h4-custom {
+    @apply font-lato font-bold tracking-wide text-h4-xs sm:text-h4-sm md:text-h4-md lg:text-h4-lg ;
+  }
+
+  .h5-custom {
+    @apply font-lato font-light tracking-wide text-h5-xs sm:text-h5-sm md:text-h5-md lg:text-h5-lg ;
+  }
+
+  .h6-custom {
+    @apply font-lato text-gray-500 tracking-wide text-h6-xs sm:text-h6-sm md:text-h6-md lg:text-h6-lg ;
+  }
+
+  .p-custom {
+    @apply font-lato text-p-xs tracking-wide sm:text-p-sm md:text-p-md lg:text-p-lg ;
   }
 }
