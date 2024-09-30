@@ -25,7 +25,7 @@ const MobileMenu = ({ mobileIsOpen, setMobileOpen }) => {
 
                 
 
-                <div className="m-5">
+                <div className="m-5 font-lato">
                     
                     <div className="flex">
                         <div className="pr-3"><FontAwesomeIcon icon={faUser} /></div>
@@ -39,13 +39,13 @@ const MobileMenu = ({ mobileIsOpen, setMobileOpen }) => {
                     
 
                     <div className="pt-6">
-                        <Dropdown title="Shop >" menuItems={shopItems} setMobileOpen={setMobileOpen}/>
+                        <Dropdown title="Shop" menuItems={shopItems} setMobileOpen={setMobileOpen}/>
                     </div>
 
                     <div className="pt-6"><Link to="/flavour-of-the-month" onClick={() => setMobileOpen(false)}>Flavour of the Month</Link></div>
 
                     <div className="pt-6">
-                        <Dropdown title="About Us >" menuItems={aboutItems} setMobileOpen={setMobileOpen}/>
+                        <Dropdown title="About Us" menuItems={aboutItems} setMobileOpen={setMobileOpen}/>
                     </div>
                 </div>
                 

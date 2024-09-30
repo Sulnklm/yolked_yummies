@@ -33,14 +33,12 @@ const Navbar = () => {
                     
                     <div className="flex items-center" >
                         <Dropdown title="Shop" menuItems={shopItems} setMobileOpen={setMobileOpen}/>
-                        <div className="ml-1"><FontAwesomeIcon icon={faChevronDown} /></div>
                     </div>
 
                     <div className=" hover:text-blue-400"><Link to="/flavour-of-the-month">Flavour of the Month</Link></div>
 
                     <div className="flex items-center" >
                         <div><Dropdown title="About Us" menuItems={aboutItems} setMobileOpen={setMobileOpen}/></div>
-                        <div className="ml-1"><FontAwesomeIcon icon={faChevronDown} /></div>
                     </div>
                 </div>
                 

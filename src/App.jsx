@@ -9,10 +9,10 @@ import YolkedYummies from './pages/YolkedYummies.jsx';
 import ProductDetail from './pages/ProductDetail.jsx';
 import FlavourOfTheMonth from './pages/FlavourOfTheMonth.jsx';
 
-
 function App() {
   return (
     <Router>
+      
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,6 +21,7 @@ function App() {
         <Route path="/product-detail" element={<ProductDetail />} />
         <Route path="/flavour-of-the-month" element={<FlavourOfTheMonth />} />
       </Routes>
+
       <Footer />
     </Router>
   );

@@ -11,7 +11,7 @@
   }
 
   .h2-custom {
-    @apply font-lato text-h2-xs tracking-wide sm:text-h2-sm md:text-h2-md lg:text-h2-lg ;
+    @apply font-lato text-h2-xs tracking-widest sm:text-h2-sm md:text-h2-md lg:text-h2-lg ;
   }
 
   .h3-custom {
@@ -32,5 +32,27 @@
 
   .p-custom {
     @apply font-lato text-p-xs tracking-wide sm:text-p-sm md:text-p-md lg:text-p-lg ;
+  }
+
+
+
+}
+
+@-webkit-keyframes hue {
+
+0% {
+    -webkit-filter: hue-rotate(0deg);
+}
+100% {
+    -webkit-filter: hue-rotate(360deg);
+}
+}
+
+@keyframes hue {
+  0% {
+      filter: hue-rotate(0deg);
+  }
+  100% {
+      filter: hue-rotate(360deg);
   }
 }

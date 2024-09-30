@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import { Autoplay } from "swiper/modules";
+import Items from "../components/items";
 
 export default function Home() {
         return (
@@ -23,9 +24,11 @@ export default function Home() {
                     </Swiper>
                 </div>
                 <div className=" text-center"> 
-                    <h1 className="h1-custom">Protein Powder Advent Calendar</h1>
-                    <h2 className="h2-custom">This is h2</h2>
+                    <h1 className="h1-custom mt-[4rem] mb-8 p-2 bg-gradient-to-r from-[#ffd21f] via-[#ff4089] to-indigo-400 text-transparent bg-clip-text hue-custom">Protein Powder Advent Calendar</h1>
+                    <h2 className="h2-custom">Discover a new flavour every month!</h2>
                 </div>
+                <Items />
+                
             </div>
         )
 

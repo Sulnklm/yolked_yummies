@@ -1,3 +1,5 @@
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
@@ -25,7 +27,10 @@ const Dropdown = ({ title, menuItems }) => {
 
     return (
         <div className="relative" {...handleMouseEvents}>
+            
             <button className={isMobile ? "" : "hover:text-blue-400"}>{title}</button>
+            <FontAwesomeIcon icon={faChevronDown} className={`ml-1 ${isOpen ? 'rotate-180' : 'rotate-0'}`} />
+
             {isOpen && (
                 <div className={`${dropdownStyles}`}>
                     {menuItems.map((menuItems, index) => (
