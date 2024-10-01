@@ -2,7 +2,7 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 23 * * *' 
 
 jobs:
   commit:
@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3 
+      uses: actions/checkout@v3  
 
     - name: Set up Node.js
       uses: actions/setup-node@v3  
@@ -30,4 +30,9 @@ jobs:
         git config --local user.name "Sulnklm"
         git add .
         git commit -m "Automatic commit: $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+
+    - name: Push changes
+      run: |
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
